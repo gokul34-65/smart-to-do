@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>AI based to-do-list</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="content">
+          <input type="text-area" class="prompt" placeholder="What's your plan..&#128522;">
+          <button class="generate-to-do-button">generate&#10024;</button>
+          <div class="to-do">
+               <input class="to-do-input" type="text" placeholder="Task name..&#129300;">
+               <input class="to-do-description" type="text-area" placeholder="Description...&#128220;">
+               <button class="add-to-do-button">add&#x1f4aa;</button>
+               <ul class="to-do-list">
+                    <li>
+                         <input class="task-status-checkbox" type="checkbox">
+                         <p class="task-name">name goes here</p>
+                         <div class="task-buttons">
+                              <button class="move-up-button">↑</button>
+                              <button class="move-down-button">↓</button>
+                              <button class="delete-task-button">delete</button>
+                         </div>
+                    </li>
+               </ul>
+          </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
