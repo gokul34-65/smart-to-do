@@ -199,7 +199,7 @@ async function generateFromAI(){
 
      if(isEmpty(response)){
           //bad response
-          alert('please provde a valid prompt!');
+          alert('Cannot create a to-do list with the given prompt');
      }
      else{
           //good response
