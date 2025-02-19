@@ -138,7 +138,6 @@ function addTask(){
           finished:false
      };
      tasks.push(taskObject);
-     console.log(tasks);
      renderTasks();
      saveToLocalStorage();
 }
@@ -195,7 +194,17 @@ async function generateFromAI(){
      generateToDoButton.classList.add('blocked');
 
      const response = await processApiRequest(inputPrompt);
-     console.log(response);
+
+     const isEmpty = (json) => Object.keys(json).length === 0;
+
+     if(isEmpty(response)){
+          //bad response
+          alert('please provde a valid prompt!');
+     }
+     else{
+          //good response
+     }
+
      populateTasks(response);
      renderTasks();
      //styling of the button
